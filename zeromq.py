@@ -1,4 +1,5 @@
 import sys
+import os
 
 # ZeroMQ 通信模式
 # PUB-SUB（發佈-訂閱）： 一個或多個發佈者向多個訂閱者發送消息。
@@ -16,8 +17,10 @@ import sys
 # python zeromq_main.py pub
 # python zeromq_main.py sub
 
-# 加入 Time 資料夾到模組搜尋路徑
-sys.path.append(r"C:\Users\p10368226\Documents\Python\side_project\ZeroMQ")
+# 加入 ZeroMQ 資料夾到模組搜尋路徑
+current_dir = os.path.dirname(os.path.abspath(__file__))
+zeromq_path = os.path.join(current_dir, "ZeroMQ")
+sys.path.append(zeromq_path)
 
 # 匯入 Server 和 Client 模組
 import rep

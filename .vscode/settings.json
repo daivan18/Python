@@ -1,6 +1,9 @@
 {
     "python.terminal.activateEnvironment": true,
+    // Mac
     "python.defaultInterpreterPath": "${workspaceFolder}/side_project/bin/python",
+    // Windows
+    // "python.defaultInterpreterPath": "${workspaceFolder}\\side_project\\Scripts\\python.exe",
     "python.venvPath": "${workspaceFolder}/side_project",
     "python.pythonPath": {
         "windows": "${workspaceFolder}\\side_project\\Scripts\\python.exe",
